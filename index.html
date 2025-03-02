@@ -1,0 +1,38 @@
+{% extends "layaout.html" %}
+
+
+{% block yasin %}
+       <div class="jumbotron text-center">
+        <h3>Yasin Yavuz 'un sitesine hoşgeldiniz...:</h3>
+        <p>Bu blogta hayallerinizi anlatin</p>
+       </div>
+
+       <p>{{Films}}</p>
+
+       <p> {% for c in Films %} 
+
+            {% if c=="anakin" %}
+             
+             <p>{{c}} iyi cocuktu</p>
+            {% elif c=="obi-wan" %}
+             <p>{{c}} iyi bir ustaydı</p>
+             {% endif %}
+
+
+            {% endfor %}
+       </p>
+
+       
+
+
+       
+        
+    
+    
+    
+
+
+       
+
+
+{% endblock yasin %}
